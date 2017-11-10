@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AutoDial" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +21,133 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I8a-3g-R9l">
+                                <rect key="frame" x="157" y="70" width="62" height="30"/>
+                                <state key="normal" title="一键报警"/>
+                                <connections>
+                                    <action selector="Dial:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q5T-wP-1Dh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fRz-Si-kRW">
+                                <rect key="frame" x="157" y="120" width="62" height="30"/>
+                                <state key="normal" title="一键火警"/>
+                                <connections>
+                                    <action selector="fire:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yu6-U2-wsX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HYr-Uu-Fmy">
+                                <rect key="frame" x="157" y="170" width="62" height="30"/>
+                                <state key="normal" title="医疗急救"/>
+                                <connections>
+                                    <action selector="Ambulance:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Y8h-7L-Y4T"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="仅可在紧急情况下使用" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yRa-kf-cyF">
+                                <rect key="frame" x="100" y="546" width="174" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="中国区适用" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U3D-QP-Tj2">
+                                <rect key="frame" x="144" y="616" width="87" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LYn-ff-X7U">
+                                <rect key="frame" x="157" y="220" width="62" height="30"/>
+                                <state key="normal" title="公路事故"/>
+                                <connections>
+                                    <action selector="Accident:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NnA-NZ-Q9g"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8sK-m7-yYx">
+                                <rect key="frame" x="31" y="486" width="108" height="30"/>
+                                <state key="normal" title="发信紧急联系人"/>
+                                <connections>
+                                    <action selector="TEST:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u7N-mx-VVq"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="经纬度" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DnU-nh-Uc4">
+                                <rect key="frame" x="21" y="280" width="333" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="当前位置" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mTU-C0-bKr">
+                                <rect key="frame" x="152" y="260" width="70" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="参考位置" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ysa-uQ-asv">
+                                <rect key="frame" x="153" y="342" width="70" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="参考城市地区" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tOq-aM-tJp">
+                                <rect key="frame" x="136" y="316" width="104" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jj4-kM-I5b">
+                                <rect key="frame" x="236" y="486" width="108" height="30"/>
+                                <state key="normal" title="呼叫紧急联系人"/>
+                                <connections>
+                                    <action selector="emergencycall:" destination="BYZ-38-t0r" eventType="touchUpInside" id="olU-GT-DzF"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="速度" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wN5-l0-deH">
+                                <rect key="frame" x="170.5" y="373" width="35" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ysa-uQ-asv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3r9-vv-sZp"/>
+                            <constraint firstItem="DnU-nh-Uc4" firstAttribute="top" secondItem="LYn-ff-X7U" secondAttribute="bottom" constant="30" id="6Hc-Tz-ILv"/>
+                            <constraint firstItem="tOq-aM-tJp" firstAttribute="top" secondItem="DnU-nh-Uc4" secondAttribute="bottom" constant="15" id="8bi-tc-6WD"/>
+                            <constraint firstItem="mTU-C0-bKr" firstAttribute="top" secondItem="LYn-ff-X7U" secondAttribute="bottom" constant="10" id="B1f-fH-M9e"/>
+                            <constraint firstItem="wN5-l0-deH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ewg-ap-r4Z"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="DnU-nh-Uc4" secondAttribute="trailing" constant="5" id="IJK-cq-mLt"/>
+                            <constraint firstItem="DnU-nh-Uc4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="5" id="J53-dv-AXf"/>
+                            <constraint firstItem="fRz-Si-kRW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JZz-eR-JQo"/>
+                            <constraint firstItem="I8a-3g-R9l" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="MCA-49-Drx"/>
+                            <constraint firstItem="fRz-Si-kRW" firstAttribute="top" secondItem="I8a-3g-R9l" secondAttribute="bottom" constant="20" id="OUM-Ux-Rse"/>
+                            <constraint firstItem="mTU-C0-bKr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TkV-00-BBD"/>
+                            <constraint firstItem="LYn-ff-X7U" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YT9-9Z-bN3"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="U3D-QP-Tj2" secondAttribute="bottom" constant="30" id="Yuw-Qh-k5B"/>
+                            <constraint firstItem="yRa-kf-cyF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="a4C-os-YFc"/>
+                            <constraint firstItem="LYn-ff-X7U" firstAttribute="top" secondItem="HYr-Uu-Fmy" secondAttribute="bottom" constant="20" id="bC2-J6-byG"/>
+                            <constraint firstItem="yRa-kf-cyF" firstAttribute="top" secondItem="jj4-kM-I5b" secondAttribute="bottom" constant="30" id="dHu-Dg-aa9"/>
+                            <constraint firstItem="ysa-uQ-asv" firstAttribute="top" secondItem="tOq-aM-tJp" secondAttribute="bottom" constant="5" id="dYa-EQ-ES4"/>
+                            <constraint firstItem="8sK-m7-yYx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="15" id="eg4-7J-oT0"/>
+                            <constraint firstItem="I8a-3g-R9l" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="l34-g3-itU"/>
+                            <constraint firstItem="HYr-Uu-Fmy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="njp-kv-bQc"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="yRa-kf-cyF" secondAttribute="bottom" constant="100" id="o5Y-ww-SF2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jj4-kM-I5b" secondAttribute="trailing" constant="15" id="rmD-d0-JJS"/>
+                            <constraint firstItem="wN5-l0-deH" firstAttribute="top" secondItem="ysa-uQ-asv" secondAttribute="bottom" constant="10" id="sN3-eA-htJ"/>
+                            <constraint firstItem="HYr-Uu-Fmy" firstAttribute="top" secondItem="fRz-Si-kRW" secondAttribute="bottom" constant="20" id="t1l-ki-fq6"/>
+                            <constraint firstItem="U3D-QP-Tj2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uU3-V2-sn4"/>
+                            <constraint firstItem="tOq-aM-tJp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wmX-R0-l9B"/>
+                            <constraint firstItem="yRa-kf-cyF" firstAttribute="top" secondItem="8sK-m7-yYx" secondAttribute="bottom" constant="30" id="xTI-yo-ptm"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="location" destination="DnU-nh-Uc4" id="hCP-BU-egk"/>
+                        <outlet property="referencecity" destination="tOq-aM-tJp" id="ULG-NV-YJY"/>
+                        <outlet property="referenceplace" destination="ysa-uQ-asv" id="SBW-At-SNi"/>
+                        <outlet property="speed" destination="wN5-l0-deH" id="78w-LM-Pqn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
         </scene>
     </scenes>
 </document>

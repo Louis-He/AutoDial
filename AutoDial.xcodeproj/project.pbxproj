@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D1B0CE81E64F556001E3D98 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D1B0CE71E64F556001E3D98 /* MapKit.framework */; };
+		1D1B0CEA1E64FE78001E3D98 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D1B0CE91E64FE78001E3D98 /* ExternalAccessory.framework */; };
 		1DD5A6251E644F0D008B3507 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD5A6241E644F0D008B3507 /* AppDelegate.swift */; };
 		1DD5A6271E644F0D008B3507 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD5A6261E644F0D008B3507 /* ViewController.swift */; };
 		1DD5A62A1E644F0D008B3507 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DD5A6281E644F0D008B3507 /* Main.storyboard */; };
@@ -15,6 +17,9 @@
 		1DD5A6321E644F0D008B3507 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DD5A6301E644F0D008B3507 /* LaunchScreen.storyboard */; };
 		1DD5A63D1E644F0D008B3507 /* AutoDialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD5A63C1E644F0D008B3507 /* AutoDialTests.swift */; };
 		1DD5A6481E644F0D008B3507 /* AutoDialUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD5A6471E644F0D008B3507 /* AutoDialUITests.swift */; };
+		1DE882371E64557F008CE96A /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DE882361E64557F008CE96A /* icon.png */; };
+		1DE882381E64557F008CE96A /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DE882361E64557F008CE96A /* icon.png */; };
+		1DE882391E64557F008CE96A /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DE882361E64557F008CE96A /* icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1D1B0CE71E64F556001E3D98 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		1D1B0CE91E64FE78001E3D98 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		1D1B0CEB1E64FE78001E3D98 /* AutoDial.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AutoDial.entitlements; sourceTree = "<group>"; };
 		1DD5A6211E644F0D008B3507 /* AutoDial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoDial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DD5A6241E644F0D008B3507 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1DD5A6261E644F0D008B3507 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +57,7 @@
 		1DD5A6431E644F0D008B3507 /* AutoDialUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutoDialUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DD5A6471E644F0D008B3507 /* AutoDialUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoDialUITests.swift; sourceTree = "<group>"; };
 		1DD5A6491E644F0D008B3507 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1DE882361E64557F008CE96A /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +65,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D1B0CEA1E64FE78001E3D98 /* ExternalAccessory.framework in Frameworks */,
+				1D1B0CE81E64F556001E3D98 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +87,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D1B0CE61E64F556001E3D98 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1D1B0CE91E64FE78001E3D98 /* ExternalAccessory.framework */,
+				1D1B0CE71E64F556001E3D98 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		1DD5A6181E644F0D008B3507 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +103,7 @@
 				1DD5A63B1E644F0D008B3507 /* AutoDialTests */,
 				1DD5A6461E644F0D008B3507 /* AutoDialUITests */,
 				1DD5A6221E644F0D008B3507 /* Products */,
+				1D1B0CE61E64F556001E3D98 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +120,8 @@
 		1DD5A6231E644F0D008B3507 /* AutoDial */ = {
 			isa = PBXGroup;
 			children = (
+				1D1B0CEB1E64FE78001E3D98 /* AutoDial.entitlements */,
+				1DE882361E64557F008CE96A /* icon.png */,
 				1DD5A6241E644F0D008B3507 /* AppDelegate.swift */,
 				1DD5A6261E644F0D008B3507 /* ViewController.swift */,
 				1DD5A6281E644F0D008B3507 /* Main.storyboard */,
@@ -198,6 +221,14 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = ME65L3DQ89;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+							com.apple.WAC = {
+								enabled = 1;
+							};
+						};
 					};
 					1DD5A6371E644F0D008B3507 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -238,6 +269,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DE882371E64557F008CE96A /* icon.png in Resources */,
 				1DD5A6321E644F0D008B3507 /* LaunchScreen.storyboard in Resources */,
 				1DD5A62F1E644F0D008B3507 /* Assets.xcassets in Resources */,
 				1DD5A62A1E644F0D008B3507 /* Main.storyboard in Resources */,
@@ -248,6 +280,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DE882381E64557F008CE96A /* icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,6 +288,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DE882391E64557F008CE96A /* icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,8 +453,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AutoDial/AutoDial.entitlements;
 				DEVELOPMENT_TEAM = ME65L3DQ89;
 				INFOPLIST_FILE = AutoDial/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hsw.AutoDial;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -432,8 +468,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AutoDial/AutoDial.entitlements;
 				DEVELOPMENT_TEAM = ME65L3DQ89;
 				INFOPLIST_FILE = AutoDial/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hsw.AutoDial;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -518,6 +556,7 @@
 				1DD5A64E1E644F0D008B3507 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1DD5A64F1E644F0D008B3507 /* Build configuration list for PBXNativeTarget "AutoDialTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +565,7 @@
 				1DD5A6511E644F0D008B3507 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1DD5A6521E644F0D008B3507 /* Build configuration list for PBXNativeTarget "AutoDialUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +574,7 @@
 				1DD5A6541E644F0D008B3507 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
